@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>MedMg</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <description></description>
+    <display-name>Test</display-name>
+    <servlet-name>Test</servlet-name>
+    <servlet-class>com.medmg.servlet.Test</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Test</servlet-name>
+    <url-pattern>/Test</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>Login</display-name>
+    <servlet-name>Login</servlet-name>
+    <servlet-class>com.medmg.servlet.Login</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Login</servlet-name>
+    <url-pattern>/Login</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>Logout</display-name>
+    <servlet-name>Logout</servlet-name>
+    <servlet-class>com.medmg.servlet.Logout</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Logout</servlet-name>
+    <url-pattern>/Logout</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+     <!--  <security-constraint>
+      <web-resource-collection>
+         <web-resource-name>SecuredBookSite</web-resource-name>
+         <url-pattern>/sec/*</url-pattern>
+         <http-method>GET</http-method>
+         <http-method>POST</http-method>
+      </web-resource-collection>
+      
+      <auth-constraint>
+         <description>
+            Let only admins use this app
+         </description>
+         <role-name>admin</role-name>
+      </auth-constraint>
+   </security-constraint>
+   
+   <security-role>
+      <role-name>admin</role-name>
+   </security-role>
+   
+<login-config>
+      <auth-method>FORM</auth-method>
+      <form-login-config>
+         <form-login-page>/logsec.jsp</form-login-page>
+         <form-error-page>/error.jsp</form-error-page>
+      </form-login-config>
+   </login-config>
+   -->
+   
+  <!--   <security-role>
+    <role-name>admin</role-name>
+</security-role>
+
+<security-role>
+    <role-name>user</role-name>
+</security-role>
+
+<security-constraint>
+    <web-resource-collection>
+        <web-resource-name>Admin Pages</web-resource-name>
+        <url-pattern>/admin/*</url-pattern>
+    </web-resource-collection>
+    <auth-constraint>
+        <role-name>admin</role-name>
+    </auth-constraint>
+</security-constraint>
+
+<security-constraint>
+    <web-resource-collection>
+        <web-resource-name>User Pages</web-resource-name>
+        <url-pattern>/user/*</url-pattern>
+    </web-resource-collection>
+    <auth-constraint>
+        <role-name>user</role-name>
+    </auth-constraint>
+</security-constraint>
+   
+   <login-config>
+      <auth-method>FORM</auth-method>
+      <form-login-config>
+         <form-login-page>/logsec.jsp</form-login-page>
+         <form-error-page>/error.jsp</form-error-page>
+      </form-login-config>
+   </login-config>-->
+   <!--<filter>
+        <filter-name>AccessControlFilter</filter-name>
+        <filter-class>com.medmg.filter.AccessControlFilter</filter-class>
+    </filter>-->
+ 
+    <!-- Map the AccessControlFilter to specific URLs -->
+    
+    <!--<filter-mapping>
+        <filter-name>AccessControlFilter</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
+ 
+    
+    <filter-mapping>
+        <filter-name>AccessControlFilter</filter-name>
+        <url-pattern>/admin/*</url-pattern>
+    </filter-mapping>
+ 
+    <filter-mapping>
+        <filter-name>AccessControlFilter</filter-name>
+        <url-pattern>/user/*</url-pattern>
+    </filter-mapping>
+ 
+    <filter-mapping>
+        <filter-name>AccessControlFilter</filter-name>
+        <url-pattern>/sub-user/*</url-pattern>
+    </filter-mapping>
+   
+   -->
+   
+   
+   
+</web-app>
